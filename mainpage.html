@@ -4,29 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="C:\data ibti\Web ibti\06-jan-25-IBTIHAJHBHN\css\styles.css">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="css/style main page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Young+Serif&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Young+Serif&display=swap" rel="stylesheet">
+  </head>
 <body>
     <header class="navbar-container">
         <div class="logo">
-          <img src="C:\data ibti\Web ibti\06-jan-25-IBTIHAJHBHN\img\img.jpg">
+            <img src="img/img.jpg" alt="Logo">
         </div>
         <nav class="nav-list">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#my profile">My Profile</a></li>
-                <li><a href="#our message">Our Message</a></li>
+                <li><a href="#contact me">Contact Me</a></li>
             </ul>
         </nav>
-      </header>
-      
-      <footer>
+    </header>
+
+    <!-- Modal untuk memasukkan nama -->
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <h2>Masukkan Nama Anda</h2>
+            <input type="text" id="nameInput" placeholder="Masukkan Nama" />
+            <button id="submitBtn">Kirim</button>
+        </div>
+    </div>
+
+    <!-- Bagian untuk menampilkan pesan selamat datang -->
+    <div id="welcomeMessage" class="hidden">
+        <h1>Selamat datang <span id="userName"></span> di website kami!</h1>
+    </div>
+
+    <main>
+        <div>
+            <article id="My profile">
+                <div class="content">
+                    <div class="content-description">
+                        <h2 class="title">Halo! Saya Ibtihaj Hafezd Bahanan</h2>
+                        <p>Seorang siswi SMA dari flexi school bintaro. Di sini, saya ingin menunjukkan karya-karya terbaik 
+                        saya dalam pengembangan web, desain, dan fotografi. Portfolio ini 
+                        adalah representasi dari pengalaman dan keahlian saya, dan saya berharap anda dapat 
+                        melihat potensi saya dalam setiap proyek yang saya kerjakan.
+                        </p>
+                        <h3>Terima kasih telah meluangkan waktu untuk melihat hasil kerja saya!</h3>
+                    </div>
+                    <div class="content-image">
+                        <img src="img/p.jpg" alt="Image">
+                    </div>
+                </div>  
+            </article>
+
+            <section class="contact-form" id="contact me">
+              <h2>Kontak Saya</h2>
+              <form id="contactForm">
+                  <label for="name">Nama:</label>
+                  <input type="text" id="name" name="name" required>
+  
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+  
+                  <label for="gender">Jenis Kelamin:</label>
+                  <select id="gender" name="gender">
+                      <option value="Male">Laki-laki</option>
+                      <option value="Female">Perempuan</option>
+                  </select>
+  
+                  <label for="message">Pesan:</label>
+                  <textarea id="message" name="message" required></textarea>
+  
+                  <button type="submit">Kirim</button>
+              </form>
+          </section>
+  
+          <section class="sent-messages">
+              <h2>Pesan yang Dikirim</h2>
+              <div id="messageList"></div>
+          </section>
+        </div>
+    </main>
+
+    <footer>
         <div class="container">
             <p>&copy; 2025 ibtihajbahanan. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
