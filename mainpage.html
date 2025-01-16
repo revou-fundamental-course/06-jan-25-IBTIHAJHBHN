@@ -12,19 +12,6 @@
 
   </head>
 <body>
-    <header class="navbar-container">
-        <div class="logo">
-            <img src="img/img.jpg" alt="Logo">
-        </div>
-        <nav class="nav-list">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#my profile">My Profile</a></li>
-                <li><a href="#contact me">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <!-- Modal untuk memasukkan nama -->
     <div id="welcomeModal" class="modal">
         <div class="modal-content">
@@ -33,15 +20,58 @@
             <button id="submitBtn">Kirim</button>
         </div>
     </div>
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#my profile">My Profile</a></li>
+                <li><a href="#project">My Project</a></li>
+                <li><a href="#contact me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Bagian untuk menampilkan pesan selamat datang -->
+    <article id="home">
+        <!-- Bagian untuk menampilkan pesan selamat datang -->
     <div id="welcomeMessage" class="hidden">
-        <h1>Selamat datang <span id="userName"></span> di website kami!</h1>
+        <h1>Welcome <span id="userName"></span> to My Website!</h1>
     </div>
+        <div id="slideshow-container" class="slideshow">
+            <div class="slides">
+              <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2019/10/04/18/36/milky-way-4526277_960_720.jpg" alt="Slide 1">
+              </div>
+              <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2019/08/13/02/03/man-4402380_960_720.jpg" alt="Slide 2">
+              </div>
+              <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2019/10/04/18/36/milky-way-4526277_960_720.jpg" alt="Slide 3">
+              </div>
+              <div class="slide">
+                <img src="https://cdn.pixabay.com/photo/2019/08/13/02/03/man-4402380_960_720.jpg" alt="Slide 4">
+              </div>
+            </div>
+        
+            <div class="controls">
+              <span class="prev">&#10094;</span>
+              <span class="next">&#10095;</span>
+            </div>
+            
+            <div class="thumbnails">
+              <img src="https://cdn.pixabay.com/photo/2011/12/14/12/17/galaxy-11098_1280.jpg" alt="Thumbnail 1">
+              <img src="https://cdn.pixabay.com/photo/2019/08/13/02/03/man-4402380_960_720.jpg" alt="Thumbnail 2">
+              <img src="https://cdn.pixabay.com/photo/2011/12/14/12/17/galaxy-11098_1280.jpg" alt="Thumbnail 3">
+              <img src="https://cdn.pixabay.com/photo/2019/08/13/02/03/man-4402380_960_720.jpg" alt="Thumbnail 4">
+            </div>
+          </div>
+    </article>
 
     <main>
         <div>
-            <article id="My profile">
+            <article id="my profile">
                 <div class="content">
                     <div class="content-description">
                         <h2 class="title">Halo! Saya Ibtihaj Hafezd Bahanan</h2>
@@ -53,9 +83,43 @@
                         <h3>Terima kasih telah meluangkan waktu untuk melihat hasil kerja saya!</h3>
                     </div>
                     <div class="content-image">
-                        <img src="img/p.jpg" alt="Image">
+                        <img src="img/p.png" alt="Image">
                     </div>
                 </div>  
+            </article>
+
+            <article class="page" id="project">
+                <h2>My Project</h2>
+                <section class="project-section">
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <img src="img\brosur 3 A5 {1 hal}.jpg" alt="brosur">
+                            <p>Desain Brosur</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="img/hal 2.png" alt="hal 2">
+                            <p>Desain Souvenir</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="img\pp.png" alt="kerja">
+                            <div class="project-info">
+                                <h2>Website 1</h2>
+                                <p>This is a description of project first.</p>
+                                <p>Click to visit the website.</p>
+                                <a href="https://avnnatravel.weebly.com/" class="project-link" target="_blank">Visit Project</a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="img\bahasa arab.png" alt="bahasa arab">
+                            <div class="project-info">
+                                <h2>Website 2</h2>
+                                <p>This is a description of website second.</p>
+                                <p>Click to visit the website.</p>
+                                <a href="https://arabiclanguage.hawkindonesia.com/" class="project-link" target="_blank">Visit Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </article>
 
             <section class="contact-form" id="contact me">
